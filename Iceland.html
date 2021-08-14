@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel | Iceland</title>
+    <style>
+      body {
+        background: linear-gradient(
+          68.6deg,
+          rgb(220, 217, 249) 1.8%,
+          rgb(172, 224, 217) 100.5%
+        );
+        padding: 50px 0px;
+        text-align: center;
+      }
+      .container {
+        background: white;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        display: block;
+        font-family: "Courier New", Courier, monospace;
+        opacity: 90%;
+        padding: 50px 30px;
+        margin: 0 auto;
+        width: 60%;
+      }
+      h1 {
+        color: #d83c65;
+        font-size: 52px;
+        font-weight: bolder;
+        line-height: 70px;
+      }
+      h2 {
+        color: #4f1567;
+        font-size: 40px;
+        line-height: 60px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 30px auto;
+        width: 40;
+      }
+      .fire-and-ice {
+        color: #1382d8;
+        font-weight: bolder;
+      }
+      img {
+        border-radius: 10px;
+        display: block;
+        margin: 10px auto;
+        max-width: 70%;
+      }
+      ul {
+        font-size: 18px;
+        line-height: 24px;
+        list-style: none;
+        margin: 30px 0px;
+        padding: 0px;
+        text-align: center;
+      }
+      .list {
+        display: inline-block;
+        max-width: 50%;
+        text-align: left;
+      }
+      button {
+        background: #d80e70;
+        border: solid 1px grey;
+        border-radius: 5px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+        color: white;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+        margin: 0 auto;
+        padding: 10px 10px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: white;
+        color: #d80e70;
+        cursor: pointer;
+      }
+      .footer {
+        font-family: monospace;
+        font-size: 12px;
+        opacity: 70%;
+      }
+      a {
+        color: unset;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+      a:hover {
+        color: #cef9e2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>VISIT ICELAND</h1>
+      <hr />
+      <h2>The Land of Fire and Ice</h2>
+      <hr />
+      <p>
+        Iceland is a country of extreme geological contrasts. Widely known as
+        <span class="fire-and-ice">'The Land of Fire and Ice'</span>, Iceland is
+        home to some of the largest glaciers in Europe and some of the world’s
+        most active volcanoes. Iceland is also the land of light and darkness.
+        Long summer days with near 24-hours of sunshine are offset by short
+        winter days with only a few hours of daylight.
+        <br />
+        <br />
+        <strong
+          >Read more at
+          <a href="https://visiticeland.com/about-iceland" target="_blank"
+            >Visit Iceland</a
+          ></strong
+        >
+      </p>
+      <br />
+      <img src =
+      https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/735/original/Icelandroad.jpg?1627109510
+      alt="Icelandic road at sunset"/>
+      <br />
+      <ul>
+        <strong>What else can I do there?</strong>
+        <br />
+        <br />
+        <div class="list">
+          <li>🚗 Drive the Golden Circle or Ring Road</li>
+          <li>🌊 Chase waterfalls</li>
+          <li>🏨 Enjoy the city life in Reykjavík</li>
+          <li>🤿 Scuba between two tectonic plates</li>
+          <li>💎 Visit Diamond Beach</li>
+          <li>🌋 Tour the volcanic landscape</li>
+          <li>💦 Relax in the Blue Lagoon</li>
+          <li>🌌 See the Aurora Borealis</li>
+          <li>🌭 Eat hot dogs</li>
+        </div>
+      </ul>
+      <br />
+      <button>🛫 Win Flights</button>
+    </div>
+    <p class="footer">
+      Coded by
+      <a
+        class="contact"
+        href="https://www.linkedin.com/in/chelsey-watson-7ab824177"
+        target="_blank"
+        >Chelsey Watson</a
+      >
+    </p>
+    <script>
+      function winFlights() {
+        let name = prompt("What is your name?");
+        let city = prompt("What is the capital city of Iceland?");
+        city = city.toLowerCase();
+        city = city.trim();
+        if (city === "reykjavík" || city === "reykjavik") {
+          alert(`Congratulations, ${name}! See you there. Skál! 🍻`);
+        } else {
+          alert(`Bad luck, ${name}! Try again? 🤞`);
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", winFlights);
+    </script>
+  </body>
+</html>
